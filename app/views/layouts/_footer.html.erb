@@ -1,0 +1,34 @@
+<body>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col-md-10">
+        <p class="text-muted"> &reg; Copyright 2014 Fundación Bolivia Digna.</p>
+      </div>
+      <div class="col-md-2">
+        <div id="fb-root"></div>
+        <div class="socialLinks" align="left" id="socialLinks">
+          <img src="/images/facebook.png" data-toggle="modal" data-target=".bs-example-modal-sm" height="50" width="50">
+          <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="fb-like-box" data-href="https://www.facebook.com/pages/Fundacion-Bolivia-Digna/740692479360514" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.instagram.com"><img src="/images/instagram.png" height="50" width="50"></a>
+          <a href="https://www.youtube.com/"><img src="/images/you_tube.png" height="50" width="50"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
