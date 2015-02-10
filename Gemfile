@@ -11,6 +11,9 @@ gem 'sdoc',         '0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'bcrypt'
+gem 'mail_form'
+gem 'simple_form'
+gem 'aescrypt','>= 1.0.0'
 
 
 group :development, :test do
