@@ -11,11 +11,11 @@ Rails.application.routes.draw do
   get 'english_speaking' => 'static_pages#english_speaking'
   get 'sports_school' => 'static_pages#sports_school'
   get 'startups' => 'static_pages#startups'
+  get 'news' => 'static_pages#news'
   #get 'contact' => 'static_pages#contact'
   #match '/send_mail', to: 'static_pages#send_mail', via: 'post'
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
-
   get    'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
@@ -24,8 +24,6 @@ Rails.application.routes.draw do
 
   
 
-
-  resources :microposts
   resources :users
   resources :carrousels
 
