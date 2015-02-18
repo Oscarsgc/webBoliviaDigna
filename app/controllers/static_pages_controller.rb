@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
-	def home
+  	def home
+      @carrousels = Carrousel.all
   	end
 
   	def who_we_are

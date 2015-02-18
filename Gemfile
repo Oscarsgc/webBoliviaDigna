@@ -14,6 +14,17 @@ gem 'bcrypt'
 gem 'mail_form'
 gem 'simple_form'
 gem 'aescrypt','>= 1.0.0'
+gem 'paperclip-dropbox'
+gem 'paperclip'
+gem "protected_attributes"
+gem "rmagick"
+gem 'jquery-turbolinks'
+gem 'dropbox'
+gem 'dropbox-sdk'
+gem 'dropbox-api'
+gem 'carrierwave-dropbox'
+
+
 
 
 group :development, :test do

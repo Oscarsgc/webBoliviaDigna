@@ -1,0 +1,9 @@
+<%= simple_form_for(@carrousel) do |f| %>
+  <%= f.error_notification %>
+
+  <p><%= f.label :photo, "Foto:" %>
+    <%= f.file_field :photo %></p><br> 
+    
+    <p><%= f.submit (@carrousel.new_record? ? 'Agregar Imagen' : 'Guardar Cambios'), :class => 'btn btn-lg btn-default' %></p>
+
+<% end %>

@@ -1,16 +1,34 @@
-<div align="center">
-  <h3>Send A message to Us</h3>
-
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+<% provide(:title, "Contact Us") %>
+<div class="jumbotron center">
+<h1>Contact Us!</h1>
+  <div class="row">
+    <div class="col-md-3">   
+      <h3>Send us a message</h3>
+      <%= simple_form_for @contact do |f| %>
+        <%= f.input :name, :required => true %>
+        <%= f.input :email, :required => true %>
+        <%= f.input :message, :as => :text, :required => true %>
+        <div class= "hidden">
+          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <div>
+          </br>
+          <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+          
+        </div>
+      <% end %>
     </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    <div class="col-md-1"></div>
+    <div class="col-md-6">
+      <h3>Our Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1903.7166103393488!2d-66.1640774397402!3d-17.390985186464665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2s!4v1406649159942" width="640" height="480" frameborder="0" style="border:0"></iframe>
+      <div align="left">
+        <strong >The address of our office is:</strong> Calle Ecuador # 508 entre Calle Tarapaca y Calle Falsuri - Cochabamba, Bolivia
+          <dd>Phone: (+591) 4 4525081</dd>
+          <dd>E-mail: <a>yovoyati.cochabamba@gmail.com</a></dd>
+          <dd>E-mail: <a>info@yovoyati.org</a></dd>
+          <dd>Skype: <a>fundacion_yvat</a></dd>
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>

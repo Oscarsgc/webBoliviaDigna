@@ -1,0 +1,32 @@
+<% provide(:title, "Home") %>
+<div class="center jumbotron">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<ol class="carousel-indicators">
+				<% @carrousels.each do |carrousel|%>    
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>              
+					<div class="item active">
+						<center><%= image_tag carrousel.photo.url %></center> 
+						<div class="carousel-caption">
+							<h3 class="img-rounded"></h3>
+						</div>
+					</div>
+				<%end%>
+			</ol>
+		</div>
+		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+	
+<!--center>  <h1>Under Construction!</h1>
+
+  <h2>
+    Please visit us at 
+    <a href="https://www.facebook.com/pages/Fundacion-Bolivia-Digna/740692479360514">Fundacion Bolivia Digna</a><br><br>
+    <img style="max-width:100px; margin-top: -7px;" src="/images/logo1.png">
+  </h2-->
+</div>

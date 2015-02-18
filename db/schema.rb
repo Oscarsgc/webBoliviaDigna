@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150129212516) do
+ActiveRecord::Schema.define(version: 20150218123657) do
+
+  create_table "carrousels", force: :cascade do |t|
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"
