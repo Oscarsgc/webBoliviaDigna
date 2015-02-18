@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   
+
+
   root 'static_pages#home'
   get 'who_we_are' => 'static_pages#who_we_are'
   get 'social_context' => 'static_pages#social_context'
@@ -13,6 +15,13 @@ Rails.application.routes.draw do
   #match '/send_mail', to: 'static_pages#send_mail', via: 'post'
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
+
+  get    'signup'  => 'users#new'
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
+  get 'sessions/new'
+
   
 
 
