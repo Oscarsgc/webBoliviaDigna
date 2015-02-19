@@ -6,8 +6,15 @@ SitemapGenerator::Sitemap.public_path = 'tmp/'
 SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
 
 SitemapGenerator::Sitemap.create do
-  SitemapGenerator::Sitemap.ping_search_engines
 
+  add contacts_path, :priority => 0.8, :changefreq => 'monthly'
+  add '/child_care', :priority => 0.8, :changefreq => 'monthly'
+  add '/english_speaking', :priority => 0.8, :changefreq => 'monthly'
+  add '/school_support', :priority => 0.8, :changefreq => 'monthly'
+  add '/social_context', :priority => 0.8, :changefreq => 'monthly'
+  add '/sports_school', :priority => 0.8, :changefreq => 'monthly'
+  add '/startups', :priority => 0.8, :changefreq => 'monthly'
+  add '/who_we_are', :priority => 0.8, :changefreq => 'monthly'
   # Put links creation logic here.
   #
   # The root path '/' and sitemap index file are added automatically for you.
@@ -31,3 +38,4 @@ SitemapGenerator::Sitemap.create do
   #     add article_path(article), :lastmod => article.updated_at
   #   end
 end
+SitemapGenerator::Sitemap.ping_search_engines
