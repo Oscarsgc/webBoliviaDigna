@@ -10,10 +10,14 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require twitter/bootstrap
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+jQuery ->
+  $("a[rel~=popover], .has-popover").popover()
+  $("a[rel~=tooltip], .has-tooltip").tooltip()
