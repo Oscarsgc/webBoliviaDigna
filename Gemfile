@@ -9,6 +9,7 @@ gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.2.0'
+gem "twitter-bootstrap-rails"
 gem 'autoprefixer-rails'
 gem 'bcrypt'
 gem 'mail_form'
