@@ -28,6 +28,7 @@ gem 'carrierwave-dropbox'
 gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'sitemap_generator'
+gem 'less-rails-bootstrap'
 
 
 
