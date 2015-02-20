@@ -11,6 +11,7 @@ gem 'sdoc',         '0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.2.0'
 gem "twitter-bootstrap-rails"
 gem 'autoprefixer-rails'
+gem "therubyracer"
 gem 'bcrypt'
 gem 'mail_form'
 gem 'simple_form'
