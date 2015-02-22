@@ -9,8 +9,6 @@ gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.2.0'
-gem "twitter-bootstrap-rails"
-gem 'autoprefixer-rails'
 gem "therubyracer"
 gem 'bcrypt'
 gem 'mail_form'
@@ -28,7 +26,6 @@ gem 'carrierwave-dropbox'
 gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'sitemap_generator'
-gem 'less-rails-bootstrap'
 
 
 
