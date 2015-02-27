@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
 
   root 'static_pages#home'
-  get 'who_we_are' => 'static_pages#who_we_are'
+  get 'about_us' => 'static_pages#about_us'
   get 'social_context' => 'static_pages#social_context'
   get 'child_care' => 'static_pages#child_care'
   get 'school_support' => 'static_pages#school_support'
@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get 'sports_school' => 'static_pages#sports_school'
   get 'startups' => 'static_pages#startups'
   get 'news' => 'static_pages#news'
+  get 'vision_mission' => 'static_pages#vision_mission'
+  get 'areas_of_action' => 'static_pages#areas_of_action'
+  get 'target_population' => 'static_pages#target_population'
   #get 'contact' => 'static_pages#contact'
   #match '/send_mail', to: 'static_pages#send_mail', via: 'post'
   match '/contacts',     to: 'contacts#new',             via: 'get'

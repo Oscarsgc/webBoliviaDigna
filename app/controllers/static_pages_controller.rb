@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
       @carrousels = Carrousel.all
   	end
 
-  	def who_we_are
+  	def about_us
   	end
 
   	def social_context  		
@@ -26,4 +26,14 @@ class StaticPagesController < ApplicationController
 
     def contact      
     end
+
+    def vision_mission
+    end
+
+    def areas_of_action
+    end
+
+    def target_population
+    end
+
 end
